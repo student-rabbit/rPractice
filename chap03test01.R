@@ -24,3 +24,30 @@ multi_three_return <- function(x, y, z) {
   return(res)
 }
 multi_three_return(3, 5, 6)
+
+
+# return()함수 확인하기
+test_first <- function(x, y, z) {
+  res <- x * y * z
+  return(res)
+}
+
+# 함수 호출
+test_first(3,5,6)
+
+#변수에 저장한 후 출력
+a <- test_first(3,5,6)
+a
+
+# cat()함수 확인하기
+test_first <- function(x, y, z) {
+  res <- x * y * z
+  cat(res)
+}
+
+# 함수 호출
+test_first(3,5,6)
+
+#변수에 저장한 후 출력
+b <- test_first(3,5,6)
+b
